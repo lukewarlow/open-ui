@@ -257,7 +257,9 @@ As mentioned in the [Declarative Triggers](#declarative-triggers) section, acces
 
 ### Disallowed elements
 
-TODO
+The `openable` attribute is allowed on all HTML elements.
+There are situations where it may not make sense but the same is true of `popover` and that works on all HTML elements.
+Author guidance can be provided that `openable` on your `<body>` or `<html>` element is not a good idea.
 
 ## Example Use Cases
 
@@ -334,9 +336,6 @@ Should JS methods throw under various circumstances:
   - When the element is open as a modal dialog?
   - When the element is open as a popover?
   - When the element is a fullscreen element?
-
-Should certain elements be disallowed?
-  - For example, should a `<details>` or `<dialog>` be excluded?
 
 Should we use a new pseudo class instead of `:open` as this might conflict with other `:open` scenarios?
   - Popover uses `:popover-open` for example.
